@@ -6,17 +6,46 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		11FE99572CEF21F800018AFE /* PersonalityTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalityTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		1129B97D2D5C8A75008E2812 /* ChoiceButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129B97C2D5C8A75008E2812 /* ChoiceButtonModifier.swift */; };
+		11FE99B02CEF303800018AFE /* CheckPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99992CEF303800018AFE /* CheckPointView.swift */; };
+		11FE99B12CEF303800018AFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE999A2CEF303800018AFE /* ContentView.swift */; };
+		11FE99B22CEF303800018AFE /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE999B2CEF303800018AFE /* EndView.swift */; };
+		11FE99B32CEF303800018AFE /* AnimalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE999D2CEF303800018AFE /* AnimalData.swift */; };
+		11FE99B42CEF303800018AFE /* CheckPointData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE999E2CEF303800018AFE /* CheckPointData.swift */; };
+		11FE99B52CEF303800018AFE /* ExUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99A02CEF303800018AFE /* ExUIColor.swift */; };
+		11FE99B62CEF303800018AFE /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99A22CEF303800018AFE /* AnimalModel.swift */; };
+		11FE99B72CEF303800018AFE /* CheckpointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99A32CEF303800018AFE /* CheckpointModel.swift */; };
+		11FE99B92CEF303800018AFE /* EndPointModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99A62CEF303800018AFE /* EndPointModifier.swift */; };
+		11FE99BA2CEF303800018AFE /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99A72CEF303800018AFE /* TitleModifier.swift */; };
+		11FE99BB2CEF303800018AFE /* AnimalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99A92CEF303800018AFE /* AnimalCardView.swift */; };
+		11FE99BC2CEF303800018AFE /* FriendCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99AA2CEF303800018AFE /* FriendCardView.swift */; };
+		11FE99BD2CEF303800018AFE /* RarityCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99AB2CEF303800018AFE /* RarityCardView.swift */; };
+		11FE99BE2CEF303800018AFE /* PersonalityTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99AE2CEF303800018AFE /* PersonalityTestApp.swift */; };
+		11FE99BF2CEF303800018AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FE99AD2CEF303800018AFE /* Assets.xcassets */; };
+		11FE99C12CEF338300018AFE /* MbtiToIndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99C02CEF337400018AFE /* MbtiToIndexModel.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		11FE99592CEF21F800018AFE /* PersonalityTest */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PersonalityTest;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		1129B97C2D5C8A75008E2812 /* ChoiceButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceButtonModifier.swift; sourceTree = "<group>"; };
+		11FE99572CEF21F800018AFE /* PersonalityTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalityTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11FE99992CEF303800018AFE /* CheckPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPointView.swift; sourceTree = "<group>"; };
+		11FE999A2CEF303800018AFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		11FE999B2CEF303800018AFE /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
+		11FE999D2CEF303800018AFE /* AnimalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalData.swift; sourceTree = "<group>"; };
+		11FE999E2CEF303800018AFE /* CheckPointData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPointData.swift; sourceTree = "<group>"; };
+		11FE99A02CEF303800018AFE /* ExUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExUIColor.swift; sourceTree = "<group>"; };
+		11FE99A22CEF303800018AFE /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
+		11FE99A32CEF303800018AFE /* CheckpointModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckpointModel.swift; sourceTree = "<group>"; };
+		11FE99A62CEF303800018AFE /* EndPointModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointModifier.swift; sourceTree = "<group>"; };
+		11FE99A72CEF303800018AFE /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
+		11FE99A92CEF303800018AFE /* AnimalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCardView.swift; sourceTree = "<group>"; };
+		11FE99AA2CEF303800018AFE /* FriendCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCardView.swift; sourceTree = "<group>"; };
+		11FE99AB2CEF303800018AFE /* RarityCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RarityCardView.swift; sourceTree = "<group>"; };
+		11FE99AD2CEF303800018AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11FE99AE2CEF303800018AFE /* PersonalityTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTestApp.swift; sourceTree = "<group>"; };
+		11FE99C02CEF337400018AFE /* MbtiToIndexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiToIndexModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		11FE99542CEF21F800018AFE /* Frameworks */ = {
@@ -32,7 +61,7 @@
 		11FE994E2CEF21F800018AFE = {
 			isa = PBXGroup;
 			children = (
-				11FE99592CEF21F800018AFE /* PersonalityTest */,
+				11FE99AF2CEF303800018AFE /* PersonalityTest */,
 				11FE99582CEF21F800018AFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +72,70 @@
 				11FE99572CEF21F800018AFE /* PersonalityTest.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		11FE999F2CEF303800018AFE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				11FE999D2CEF303800018AFE /* AnimalData.swift */,
+				11FE999E2CEF303800018AFE /* CheckPointData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		11FE99A12CEF303800018AFE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				11FE99A02CEF303800018AFE /* ExUIColor.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		11FE99A42CEF303800018AFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11FE99A22CEF303800018AFE /* AnimalModel.swift */,
+				11FE99A32CEF303800018AFE /* CheckpointModel.swift */,
+				11FE99C02CEF337400018AFE /* MbtiToIndexModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11FE99A82CEF303800018AFE /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				1129B97C2D5C8A75008E2812 /* ChoiceButtonModifier.swift */,
+				11FE99A62CEF303800018AFE /* EndPointModifier.swift */,
+				11FE99A72CEF303800018AFE /* TitleModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		11FE99AC2CEF303800018AFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11FE999A2CEF303800018AFE /* ContentView.swift */,
+				11FE99992CEF303800018AFE /* CheckPointView.swift */,
+				11FE999B2CEF303800018AFE /* EndView.swift */,
+				11FE99A92CEF303800018AFE /* AnimalCardView.swift */,
+				11FE99AA2CEF303800018AFE /* FriendCardView.swift */,
+				11FE99AB2CEF303800018AFE /* RarityCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11FE99AF2CEF303800018AFE /* PersonalityTest */ = {
+			isa = PBXGroup;
+			children = (
+				11FE99AC2CEF303800018AFE /* View */,
+				11FE99A42CEF303800018AFE /* Model */,
+				11FE999F2CEF303800018AFE /* Data */,
+				11FE99A82CEF303800018AFE /* Modifier */,
+				11FE99A12CEF303800018AFE /* Extension */,
+				11FE99AD2CEF303800018AFE /* Assets.xcassets */,
+				11FE99AE2CEF303800018AFE /* PersonalityTestApp.swift */,
+			);
+			path = PersonalityTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +152,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				11FE99592CEF21F800018AFE /* PersonalityTest */,
 			);
 			name = PersonalityTest;
 			packageProductDependencies = (
@@ -109,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11FE99BF2CEF303800018AFE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +210,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11FE99B02CEF303800018AFE /* CheckPointView.swift in Sources */,
+				11FE99B12CEF303800018AFE /* ContentView.swift in Sources */,
+				11FE99B22CEF303800018AFE /* EndView.swift in Sources */,
+				11FE99B32CEF303800018AFE /* AnimalData.swift in Sources */,
+				11FE99B42CEF303800018AFE /* CheckPointData.swift in Sources */,
+				11FE99B52CEF303800018AFE /* ExUIColor.swift in Sources */,
+				11FE99B62CEF303800018AFE /* AnimalModel.swift in Sources */,
+				11FE99B72CEF303800018AFE /* CheckpointModel.swift in Sources */,
+				11FE99B92CEF303800018AFE /* EndPointModifier.swift in Sources */,
+				11FE99BA2CEF303800018AFE /* TitleModifier.swift in Sources */,
+				1129B97D2D5C8A75008E2812 /* ChoiceButtonModifier.swift in Sources */,
+				11FE99BB2CEF303800018AFE /* AnimalCardView.swift in Sources */,
+				11FE99C12CEF338300018AFE /* MbtiToIndexModel.swift in Sources */,
+				11FE99BC2CEF303800018AFE /* FriendCardView.swift in Sources */,
+				11FE99BD2CEF303800018AFE /* RarityCardView.swift in Sources */,
+				11FE99BE2CEF303800018AFE /* PersonalityTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +358,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PersonalityTest/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = WBC4T5V7CF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -280,7 +387,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PersonalityTest/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = WBC4T5V7CF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
