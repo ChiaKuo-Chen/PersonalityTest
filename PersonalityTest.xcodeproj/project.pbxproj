@@ -18,7 +18,7 @@
 		11FE99B72CEF303800018AFE /* CheckpointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99A32CEF303800018AFE /* CheckpointModel.swift */; };
 		11FE99B92CEF303800018AFE /* EndPointModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99A62CEF303800018AFE /* EndPointModifier.swift */; };
 		11FE99BA2CEF303800018AFE /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99A72CEF303800018AFE /* TitleModifier.swift */; };
-		11FE99BB2CEF303800018AFE /* AnimalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99A92CEF303800018AFE /* AnimalCardView.swift */; };
+		11FE99BB2CEF303800018AFE /* CardUpperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99A92CEF303800018AFE /* CardUpperView.swift */; };
 		11FE99BC2CEF303800018AFE /* FriendCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99AA2CEF303800018AFE /* FriendCardView.swift */; };
 		11FE99BD2CEF303800018AFE /* RarityCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99AB2CEF303800018AFE /* RarityCardView.swift */; };
 		11FE99BE2CEF303800018AFE /* PersonalityTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99AE2CEF303800018AFE /* PersonalityTestApp.swift */; };
@@ -39,7 +39,7 @@
 		11FE99A32CEF303800018AFE /* CheckpointModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckpointModel.swift; sourceTree = "<group>"; };
 		11FE99A62CEF303800018AFE /* EndPointModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointModifier.swift; sourceTree = "<group>"; };
 		11FE99A72CEF303800018AFE /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
-		11FE99A92CEF303800018AFE /* AnimalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCardView.swift; sourceTree = "<group>"; };
+		11FE99A92CEF303800018AFE /* CardUpperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUpperView.swift; sourceTree = "<group>"; };
 		11FE99AA2CEF303800018AFE /* FriendCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCardView.swift; sourceTree = "<group>"; };
 		11FE99AB2CEF303800018AFE /* RarityCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RarityCardView.swift; sourceTree = "<group>"; };
 		11FE99AD2CEF303800018AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 				11FE999A2CEF303800018AFE /* ContentView.swift */,
 				11FE99992CEF303800018AFE /* CheckPointView.swift */,
 				11FE999B2CEF303800018AFE /* EndView.swift */,
-				11FE99A92CEF303800018AFE /* AnimalCardView.swift */,
+				11FE99A92CEF303800018AFE /* CardUpperView.swift */,
 				11FE99AA2CEF303800018AFE /* FriendCardView.swift */,
 				11FE99AB2CEF303800018AFE /* RarityCardView.swift */,
 			);
@@ -221,7 +221,7 @@
 				11FE99B92CEF303800018AFE /* EndPointModifier.swift in Sources */,
 				11FE99BA2CEF303800018AFE /* TitleModifier.swift in Sources */,
 				1129B97D2D5C8A75008E2812 /* ChoiceButtonModifier.swift in Sources */,
-				11FE99BB2CEF303800018AFE /* AnimalCardView.swift in Sources */,
+				11FE99BB2CEF303800018AFE /* CardUpperView.swift in Sources */,
 				11FE99C12CEF338300018AFE /* MbtiToIndexModel.swift in Sources */,
 				11FE99BC2CEF303800018AFE /* FriendCardView.swift in Sources */,
 				11FE99BD2CEF303800018AFE /* RarityCardView.swift in Sources */,

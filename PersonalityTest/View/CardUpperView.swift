@@ -4,7 +4,7 @@
 //
 import SwiftUI
 
-struct AnimalCardView: View {
+struct CardUpperView: View {
     
     // MARK: - PROPERTIES
     var animal : Animal
@@ -75,7 +75,7 @@ struct AnimalCardView: View {
 }
 
 #Preview(traits: .sizeThatFitsLayout) {
-    AnimalCardView(animal: AnimalData[0])
+    CardUpperView(animal: AnimalData[0])
 }
 
 
