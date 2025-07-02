@@ -94,7 +94,7 @@ struct EndView: View {
                     Spacer()
                     
                     ShareLink(item: renderedImage,
-                              preview: SharePreview("分享你的結果", image: renderedImage),
+                              preview: SharePreview("分享你的結果", image: Image(animal.name)),
                               label: {
                         
                         HStack {
