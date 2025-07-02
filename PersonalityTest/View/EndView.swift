@@ -47,6 +47,7 @@ struct CardView: View {
             .background(
                 Image("BackGround")
                     .opacity(0.6)
+                    .ignoresSafeArea(.all)
             )
     
     }
@@ -80,7 +81,7 @@ struct EndView: View {
                             .foregroundStyle(Color(UIColor(hex: "00008B")))
                             .fontWeight(.medium)
                             .padding(.vertical, 10)
-                            .offset(x: 20, y: 20)
+                            .offset(x: 20)
                             .opacity(ticketToGoBack ? 1 : 0)
                             .onTapGesture {
                                 if ticketToGoBack {
@@ -111,7 +112,6 @@ struct EndView: View {
                                 .fill(Color(UIColor(hex: "#cd6133")))
                                 .shadow(color: Color.black, radius: 0, x:4, y:4)
                         )
-                        .offset(y: -40)
 
                     })
                                         
@@ -119,7 +119,6 @@ struct EndView: View {
 
 
             } // ZSTACK
-            .ignoresSafeArea(.all)
             .navigationDestination(isPresented: $goBackToContentView){
                 ContentView()
                     .navigationBarBackButtonHidden()
