@@ -9,16 +9,14 @@ struct CheckPointView: View {
     
     // MARK: - PROPERTIES
     var checkPoint : CheckPoint
-    
-    @State private var goToNextChechPoint : Bool = false
-    @State private var destinationNumber : Int = -1
+
+    @EnvironmentObject var router: Router
 
     // MARK: - BODY
     
     var body: some View {
         
         
-        NavigationStack {
             VStack {
                 
                 Spacer()
@@ -45,10 +43,9 @@ struct CheckPointView: View {
                     
                     ForEach(0 ..< checkPoint.choiceString.count , id: \.self) { index in
 
-                        NavigationLink(
-                            destination: {
-                                goToNextView(checkPoint.choiceDestination[index], checkPoint.gotoEndView[index])
-                                    .navigationBarBackButtonHidden(true)
+                        Button(
+                            action: {
+                                navigate(to: index)
                             },
                             label: {
                                 Text(checkPoint.choiceString[index])
@@ -59,10 +56,6 @@ struct CheckPointView: View {
                     .padding(.vertical, 10)
 
                 }
-
-
-                
-                
                 
             } // VSTACK
             .padding(.bottom, 50)
@@ -71,26 +64,26 @@ struct CheckPointView: View {
                     .scaledToFit()
             )
             .edgesIgnoringSafeArea(.all)
-        } // NavigationStack
+        
         
     }
     
-
     
-    @ViewBuilder
-    func goToNextView(_ destinationNumber: Int, _ goToEndView: Bool) -> some View {
-        if (goToEndView == true) {
-            EndView(animal: AnimalData[destinationNumber])
+    // MARK: - FUNCTIONS
+    private func navigate(to index: Int) {
+        if checkPoint.gotoEndView[index] {
+            let animal = AnimalData[checkPoint.choiceDestination[index]]
+            router.path.append(.end(animal: animal))
         } else {
-            CheckPointView(checkPoint: checkPointData[destinationNumber])
+            let nextCheckPoint = checkPointData[checkPoint.choiceDestination[index]]
+            router.path.append(.checkPoint(checkPoint: nextCheckPoint))
         }
     }
-    
-    
 
 }
 
-// MARK: - PREVIEW
 #Preview {
-    return CheckPointView(checkPoint: checkPointData[0])
+    let router = Router()
+    CheckPointView(checkPoint: checkPointData[0])
+        .environmentObject(router)
 }

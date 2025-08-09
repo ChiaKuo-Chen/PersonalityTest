@@ -9,12 +9,13 @@ struct ContentView: View {
     
     // MARK: - PROPERTIES
     @State private var pulsateAnimation: Bool = false
-    
+    @EnvironmentObject var router: Router
+
     // MARK: - BODY
     
     var body: some View {
         
-        NavigationStack{
+        NavigationStack(path: $router.path){
             
             VStack {
                 Spacer()
@@ -23,10 +24,9 @@ struct ContentView: View {
                 
                 Spacer()
                 
-                NavigationLink(
-                    destination: {
-                        CheckPointView(checkPoint: checkPointData[0])
-                            .navigationBarBackButtonHidden(true)
+                Button(
+                    action: {
+                        router.path.append(.checkPoint(checkPoint: checkPointData[0]))
                     },
                     label: {
                         Text("測測看你是哪種動物？")
@@ -34,11 +34,27 @@ struct ContentView: View {
                             .animation(.easeInOut(duration: 1.5).repeatForever(),
                                        value: pulsateAnimation)
                     } // LABEL
-                ) // NAVIGATIONLINK
+                ) // BUTTON
                 .buttonStyle(ChoiceButtonModifier())
                 .padding(.bottom, 100)
 
             } // VSTACK
+            .navigationDestination(for: Page.self) { page in
+                switch page {
+            
+                case .checkPoint(let checkPoint):
+                    CheckPointView(checkPoint: checkPoint)
+                        .environmentObject(router)
+                        .navigationBarBackButtonHidden()
+
+                case .end(let animal):
+                    EndView(animal: animal)
+                        .environmentObject(router)
+                        .navigationBarBackButtonHidden()
+                }
+                
+                
+            }
             .background(
                 Image("BackGround")
                     .scaledToFit()
@@ -72,5 +88,8 @@ struct ContentView: View {
 
 // MARK: - PREVIEW
 #Preview {
+    let router = Router()
+
     ContentView()
+        .environmentObject(router)
 }

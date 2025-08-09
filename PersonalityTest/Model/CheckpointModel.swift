@@ -5,8 +5,9 @@
 
 import Foundation
 
-struct CheckPoint {
+struct CheckPoint : Identifiable, Hashable {
     
+    var id = UUID()
     var title : String
     var choiceString : [String]
     var choiceDestination : [Int]

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1129B97D2D5C8A75008E2812 /* ChoiceButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129B97C2D5C8A75008E2812 /* ChoiceButtonModifier.swift */; };
+		11476FBA2E3A165100F579C5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11476FB92E3A164D00F579C5 /* Router.swift */; };
 		11FE99B02CEF303800018AFE /* CheckPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE99992CEF303800018AFE /* CheckPointView.swift */; };
 		11FE99B12CEF303800018AFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE999A2CEF303800018AFE /* ContentView.swift */; };
 		11FE99B22CEF303800018AFE /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE999B2CEF303800018AFE /* EndView.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		1129B97C2D5C8A75008E2812 /* ChoiceButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceButtonModifier.swift; sourceTree = "<group>"; };
+		11476FB92E3A164D00F579C5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		11FE99572CEF21F800018AFE /* PersonalityTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalityTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FE99992CEF303800018AFE /* CheckPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPointView.swift; sourceTree = "<group>"; };
 		11FE999A2CEF303800018AFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11476FB82E3A163300F579C5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11476FB92E3A164D00F579C5 /* Router.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		11FE994E2CEF21F800018AFE = {
 			isa = PBXGroup;
 			children = (
@@ -77,8 +87,8 @@
 		11FE999F2CEF303800018AFE /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				11FE999D2CEF303800018AFE /* AnimalData.swift */,
 				11FE999E2CEF303800018AFE /* CheckPointData.swift */,
+				11FE999D2CEF303800018AFE /* AnimalData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -127,13 +137,14 @@
 		11FE99AF2CEF303800018AFE /* PersonalityTest */ = {
 			isa = PBXGroup;
 			children = (
+				11FE99AE2CEF303800018AFE /* PersonalityTestApp.swift */,
 				11FE99AC2CEF303800018AFE /* View */,
+				11476FB82E3A163300F579C5 /* ViewModel */,
 				11FE99A42CEF303800018AFE /* Model */,
 				11FE999F2CEF303800018AFE /* Data */,
 				11FE99A82CEF303800018AFE /* Modifier */,
 				11FE99A12CEF303800018AFE /* Extension */,
 				11FE99AD2CEF303800018AFE /* Assets.xcassets */,
-				11FE99AE2CEF303800018AFE /* PersonalityTestApp.swift */,
 			);
 			path = PersonalityTest;
 			sourceTree = "<group>";
@@ -220,6 +231,7 @@
 				11FE99B72CEF303800018AFE /* CheckpointModel.swift in Sources */,
 				11FE99B92CEF303800018AFE /* EndPointModifier.swift in Sources */,
 				11FE99BA2CEF303800018AFE /* TitleModifier.swift in Sources */,
+				11476FBA2E3A165100F579C5 /* Router.swift in Sources */,
 				1129B97D2D5C8A75008E2812 /* ChoiceButtonModifier.swift in Sources */,
 				11FE99BB2CEF303800018AFE /* CardUpperView.swift in Sources */,
 				11FE99C12CEF338300018AFE /* MbtiToIndexModel.swift in Sources */,
