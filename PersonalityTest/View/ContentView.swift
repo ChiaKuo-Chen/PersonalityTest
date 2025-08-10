@@ -70,21 +70,22 @@ struct ContentView: View {
         
     }
     
-    // MARK: Title
-    
-    var Title: some View {
-        
-        let titleString = ["動", "物", "占", "卜"]
-        
-        return HStack(spacing: 20) {
-            ForEach(0 ..< titleString.count , id: \.self) { index in
-                Text(titleString[index])
-                    .modifier(TitleModifier())
-            }
-        } // HSTACK
-    }
-
 }
+
+// MARK: Title
+@ViewBuilder
+var Title: some View {
+    
+    let titleString = ["動", "物", "占", "卜"]
+    
+    HStack(spacing: 20) {
+        ForEach(0 ..< titleString.count , id: \.self) { index in
+            Text(titleString[index])
+                .modifier(TitleModifier())
+        }
+    } // HSTACK
+}
+
 
 // MARK: - PREVIEW
 #Preview {

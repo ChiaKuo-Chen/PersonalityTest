@@ -22,6 +22,7 @@ struct CheckPointView: View {
                 Spacer()
                 
                 Text(checkPoint.title)
+                    .multilineTextAlignment(.leading)
                     .padding(20)
                     .bold()
                     .font(.title)
@@ -30,15 +31,13 @@ struct CheckPointView: View {
                     .background(
                         RoundedRectangle(cornerRadius: 20)
                             .fill(Color(UIColor(hex: "#cd6133")))
-                            .opacity(0.9)
                             .shadow(color: Color.black, radius: 0, x:4, y:4)
                     )
                 
                 
                 Spacer()
                 
-                
-                // Make sre every choice has correspond destination
+                // Make choice has correspond destination
                 if checkPoint.choiceString.count == checkPoint.choiceDestination.count {
                     
                     ForEach(0 ..< checkPoint.choiceString.count , id: \.self) { index in

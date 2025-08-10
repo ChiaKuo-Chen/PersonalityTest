@@ -12,19 +12,16 @@ struct ChoiceButtonModifier: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         
         ZStack {
-            Capsule()
-                .fill(Color.black)
-                .opacity(0.9)
-                .frame(width: configuration.isPressed ? 364 : 360 ,
-                       height: configuration.isPressed ? 54 : 50 )
 
+            // BACKGROUND
             Capsule()
                 .fill(Color(UIColor(hex: configuration.isPressed ? "007b29" : "#009432")))
                 .opacity(0.9)
                 .frame(width: 360, height: 50)
-                .shadow(color: Color(UIColor(hex: "#000000", alpha: 0.8)), radius: 0,
-                        x: configuration.isPressed ? 0 : 4, y: configuration.isPressed ? 0 : 4)
+                .shadow(color: Color.black, radius: 0,
+                        x: configuration.isPressed ? -2 : 4, y: configuration.isPressed ? -2 : 4)
 
+            // Text
             configuration.label
                 .bold()
                 .font(.title)
